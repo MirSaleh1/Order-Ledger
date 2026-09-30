@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:latest
+    container_name: OrderLedger
+    environment:
+      POSTGRES_USER: mirsaleh
+      POSTGRES_PASSWORD: abasovmirsaleh
+      POSTGRES_DB: orderledger
+    ports:
+      - "1234:5432"
+
+
